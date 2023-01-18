@@ -1,2 +1,4 @@
 temp/
 get_ip.py
+node_modules/
+.vscode
