@@ -1,24 +1,121 @@
 body {
-    background-color: black;
     color: white;
 }
 
-#info-image {
-    background-image: url("../images/images\ \(1\)\ \(3\).jpeg");
+.bg-cyber {
+    background-color: rgb(133, 255, 10);
 }
 
-#information {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.bg-transparent {
+    background-color: transparent;
 }
 
-.description {
-    padding: 2.9em 0;
+.fg-dark {
+    color: black;
 }
 
-@media screen and (max-width: 550px) {
-    #intro-wrapper {
+.fg-cyber {
+
+    color: rgb(133, 255, 10);
+}
+
+@media screen and (max-width: 1010px) {
+    .main-card {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .main-card h5 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 994px) {
+    #skills {
+        display: flex;
         flex-direction: column;
     }
+}
+
+.skill-card {
+    border-radius: 40px;
+    padding: .6em;
+    margin: 1em;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.project {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.display-none {
+    display: none;
+}
+
+
+.fa-instagram {
+    color: rgb(255, 0, 136);
+}
+
+.fa-twitter {
+    color: rgb(0, 145, 255);
+}
+
+.fa-envelope {
+    color: red;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    background-color: black;
+    padding: 2em 3em;
+}
+
+@media screen and (max-width: 1210px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #social-media-links {
+        padding: 2em 0;
+    }
+
+    #social-media-links div {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    #social-media-links i {
+        background-color: aqua;
+    }
+
+}
+
+.footer-head a {
+    font-size: .6em;
+}
+
+#social-media-links i {
+    margin: 0 1em;
+}
+
+.project-card {
+    background-color: transparent;
 }
